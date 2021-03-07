@@ -2,7 +2,7 @@
 " Author:      ReturnOfTheLast (returnofthelast@gmail.com)
 " Webpage:     http://www.example.com
 " Description: my colorscheme
-" Last Change: 2021-03-04
+" Last Change: 2021-03-07
 
 hi clear
 
@@ -36,33 +36,16 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CursorLineNr ctermbg=0 ctermfg=15 cterm=NONE guibg=#101010 guifg=#dddddd gui=NONE
     hi FoldColumn ctermbg=8 ctermfg=15 cterm=NONE guibg=#404040 guifg=#dddddd gui=NONE
     hi Folded ctermbg=8 ctermfg=15 cterm=NONE guibg=#404040 guifg=#dddddd gui=NONE
-    hi SpecialKey ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi DiffAdd ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi DiffChange ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi DiffDelete ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi DiffText ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi IncSearch ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi Search ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi Directory ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi MatchParen ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi SpellBad ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE guisp=#d23d3d
-    hi SpellCap ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE guisp=#4e9fb1
-    hi SpellLocal ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE guisp=#8542ff
-    hi SpellRare ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE guisp=#42717b
-    hi ColorColumn ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi SignColumn ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi ErrorMsg ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi ModeMsg ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi MoreMsg ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi Question ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
+    hi DiffAdd ctermbg=0 ctermfg=2 cterm=NONE guibg=#101010 guifg=#b8d68c gui=NONE
+    hi DiffChange ctermbg=0 ctermfg=3 cterm=NONE guibg=#101010 guifg=#e1aa5d gui=NONE
+    hi DiffDelete ctermbg=0 ctermfg=1 cterm=NONE guibg=#101010 guifg=#e84f4f gui=NONE
+    hi DiffText ctermbg=0 ctermfg=15 cterm=NONE guibg=#101010 guifg=#dddddd gui=NONE
+    hi Search ctermbg=15 ctermfg=0 cterm=NONE guibg=#dddddd guifg=#101010 gui=NONE
+    hi MatchParen ctermbg=6 ctermfg=0 cterm=NONE guibg=#6d878d guifg=#101010 gui=NONE
+    hi ModeMsg ctermbg=15 ctermfg=0 cterm=NONE guibg=#dddddd guifg=#101010 gui=NONE
     hi Cursor ctermbg=15 ctermfg=0 cterm=NONE guibg=#dddddd guifg=#101010 gui=NONE
-    hi CursorColumn ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi QuickFixLine ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi Conceal ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi ToolbarLine ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi ToolbarButton ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi debugPC ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
-    hi debugBreakpoint ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
+    hi debugPC ctermbg=0 ctermfg=4 cterm=NONE guibg=#101010 guifg=#7dc1cf gui=NONE
+    hi debugBreakpoint ctermbg=0 ctermfg=1 cterm=NONE guibg=#101010 guifg=#e84f4f gui=NONE
     hi Pmenu ctermbg=8 ctermfg=15 cterm=NONE guibg=#404040 guifg=#dddddd gui=NONE
     hi PmenuSel ctermbg=15 ctermfg=0 cterm=NONE guibg=#dddddd guifg=#101010 gui=NONE
 
@@ -92,39 +75,25 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CursorLineNr ctermbg=black ctermfg=white cterm=NONE
     hi FoldColumn ctermbg=darkgray ctermfg=white cterm=NONE
     hi Folded ctermbg=darkgray ctermfg=white cterm=NONE
-    hi SpecialKey ctermbg=white ctermfg=darkgray cterm=NONE
-    hi DiffAdd ctermbg=white ctermfg=darkgray cterm=NONE
-    hi DiffChange ctermbg=white ctermfg=darkgray cterm=NONE
-    hi DiffDelete ctermbg=white ctermfg=darkgray cterm=NONE
-    hi DiffText ctermbg=white ctermfg=darkgray cterm=NONE
-    hi IncSearch ctermbg=white ctermfg=darkgray cterm=NONE
-    hi Search ctermbg=white ctermfg=darkgray cterm=NONE
-    hi Directory ctermbg=white ctermfg=darkgray cterm=NONE
-    hi MatchParen ctermbg=white ctermfg=darkgray cterm=NONE
-    hi SpellBad ctermbg=white ctermfg=darkgray cterm=NONE
-    hi SpellCap ctermbg=white ctermfg=darkgray cterm=NONE
-    hi SpellLocal ctermbg=white ctermfg=darkgray cterm=NONE
-    hi SpellRare ctermbg=white ctermfg=darkgray cterm=NONE
-    hi ColorColumn ctermbg=white ctermfg=darkgray cterm=NONE
-    hi SignColumn ctermbg=white ctermfg=darkgray cterm=NONE
-    hi ErrorMsg ctermbg=white ctermfg=darkgray cterm=NONE
-    hi ModeMsg ctermbg=white ctermfg=darkgray cterm=NONE
-    hi MoreMsg ctermbg=white ctermfg=darkgray cterm=NONE
-    hi Question ctermbg=white ctermfg=darkgray cterm=NONE
+    hi DiffAdd ctermbg=black ctermfg=darkgreen cterm=NONE
+    hi DiffChange ctermbg=black ctermfg=darkyellow cterm=NONE
+    hi DiffDelete ctermbg=black ctermfg=darkred cterm=NONE
+    hi DiffText ctermbg=black ctermfg=white cterm=NONE
+    hi Search ctermbg=white ctermfg=black cterm=NONE
+    hi MatchParen ctermbg=darkcyan ctermfg=black cterm=NONE
+    hi ModeMsg ctermbg=white ctermfg=black cterm=NONE
     hi Cursor ctermbg=white ctermfg=black cterm=NONE
-    hi CursorColumn ctermbg=white ctermfg=darkgray cterm=NONE
-    hi QuickFixLine ctermbg=white ctermfg=darkgray cterm=NONE
-    hi Conceal ctermbg=white ctermfg=darkgray cterm=NONE
-    hi ToolbarLine ctermbg=white ctermfg=darkgray cterm=NONE
-    hi ToolbarButton ctermbg=white ctermfg=darkgray cterm=NONE
-    hi debugPC ctermbg=white ctermfg=darkgray cterm=NONE
-    hi debugBreakpoint ctermbg=white ctermfg=darkgray cterm=NONE
+    hi debugPC ctermbg=black ctermfg=darkblue cterm=NONE
+    hi debugBreakpoint ctermbg=black ctermfg=darkred cterm=NONE
     hi Pmenu ctermbg=darkgray ctermfg=white cterm=NONE
     hi PmenuSel ctermbg=white ctermfg=black cterm=NONE
 endif
 
 hi link EndOfBuffer NonText
 hi link Number Constant
+hi link ErrorMsg Error
+hi link MoreMsg Normal
+hi link Question Normal
 hi link WarningMsg Error
 hi link CursorIM Cursor
 hi link Terminal Normal
