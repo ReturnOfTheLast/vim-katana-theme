@@ -30,7 +30,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Todo ctermbg=6 ctermfg=15 cterm=NONE guibg=#6d878d guifg=#dddddd gui=NONE
     hi Type ctermbg=0 ctermfg=4 cterm=NONE guibg=#101010 guifg=#7dc1cf gui=NONE
     hi Underlined ctermbg=0 ctermfg=5 cterm=NONE guibg=#101010 guifg=#9b64fb gui=NONE
-    hi Title ctermbg=8 ctermfg=0 cterm=NONE guibg=#404040 guifg=#101010 gui=NONE
     hi CursorLine ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
     hi LineNr ctermbg=0 ctermfg=8 cterm=NONE guibg=#101010 guifg=#404040 gui=NONE
     hi CursorLineNr ctermbg=0 ctermfg=15 cterm=NONE guibg=#101010 guifg=#dddddd gui=NONE
@@ -48,6 +47,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi debugBreakpoint ctermbg=0 ctermfg=1 cterm=NONE guibg=#101010 guifg=#e84f4f gui=NONE
     hi Pmenu ctermbg=8 ctermfg=15 cterm=NONE guibg=#404040 guifg=#dddddd gui=NONE
     hi PmenuSel ctermbg=15 ctermfg=0 cterm=NONE guibg=#dddddd guifg=#101010 gui=NONE
+    hi Directory ctermbg=0 ctermfg=6 cterm=NONE guibg=#101010 guifg=#6d878d gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -69,7 +69,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Todo ctermbg=darkcyan ctermfg=white cterm=NONE
     hi Type ctermbg=black ctermfg=darkblue cterm=NONE
     hi Underlined ctermbg=black ctermfg=darkmagenta cterm=NONE
-    hi Title ctermbg=darkgray ctermfg=black cterm=NONE
     hi CursorLine ctermbg=white ctermfg=darkgray cterm=NONE
     hi LineNr ctermbg=black ctermfg=darkgray cterm=NONE
     hi CursorLineNr ctermbg=black ctermfg=white cterm=NONE
@@ -87,10 +86,12 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi debugBreakpoint ctermbg=black ctermfg=darkred cterm=NONE
     hi Pmenu ctermbg=darkgray ctermfg=white cterm=NONE
     hi PmenuSel ctermbg=white ctermfg=black cterm=NONE
+    hi Directory ctermbg=black ctermfg=darkcyan cterm=NONE
 endif
 
 hi link EndOfBuffer NonText
 hi link Number Constant
+hi link Title Normal
 hi link ErrorMsg Error
 hi link MoreMsg Normal
 hi link Question Normal
