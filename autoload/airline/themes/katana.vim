@@ -78,3 +78,7 @@ let g:airline#themes#katana#palette.visual_modified.airline_error = g:airline#th
 let g:airline#themes#katana#palette.inactive.airline_error = g:airline#themes#katana#palette.normal.airline_error
 let g:airline#themes#katana#palette.inactive_modified.airline_error = g:airline#themes#katana#palette.normal.airline_error
 let g:airline#themes#katana#palette.commandline.airline_error = g:airline#themes#katana#palette.normal.airline_error
+
+let g:airline#themes#katana#palette.accents = {
+			\ 'red': [ '#e84f4f', '', 1, '' ]
+			\ }

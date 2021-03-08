@@ -2,7 +2,7 @@
 " Author:      ReturnOfTheLast (returnofthelast@gmail.com)
 " Webpage:     http://www.example.com
 " Description: my colorscheme
-" Last Change: 2021-03-07
+" Last Change: 2021-03-08
 
 hi clear
 
@@ -33,8 +33,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CursorLine ctermbg=15 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#404040 gui=NONE
     hi LineNr ctermbg=0 ctermfg=8 cterm=NONE guibg=#101010 guifg=#404040 gui=NONE
     hi CursorLineNr ctermbg=0 ctermfg=15 cterm=NONE guibg=#101010 guifg=#dddddd gui=NONE
-    hi FoldColumn ctermbg=8 ctermfg=15 cterm=NONE guibg=#404040 guifg=#dddddd gui=NONE
-    hi Folded ctermbg=8 ctermfg=15 cterm=NONE guibg=#404040 guifg=#dddddd gui=NONE
+    hi FoldColumn ctermbg=8 ctermfg=6 cterm=NONE guibg=#404040 guifg=#6d878d gui=NONE
+    hi Folded ctermbg=8 ctermfg=6 cterm=NONE guibg=#404040 guifg=#6d878d gui=NONE
     hi DiffAdd ctermbg=0 ctermfg=2 cterm=NONE guibg=#101010 guifg=#b8d68c gui=NONE
     hi DiffChange ctermbg=0 ctermfg=3 cterm=NONE guibg=#101010 guifg=#e1aa5d gui=NONE
     hi DiffDelete ctermbg=0 ctermfg=1 cterm=NONE guibg=#101010 guifg=#e84f4f gui=NONE
@@ -72,8 +72,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CursorLine ctermbg=white ctermfg=darkgray cterm=NONE
     hi LineNr ctermbg=black ctermfg=darkgray cterm=NONE
     hi CursorLineNr ctermbg=black ctermfg=white cterm=NONE
-    hi FoldColumn ctermbg=darkgray ctermfg=white cterm=NONE
-    hi Folded ctermbg=darkgray ctermfg=white cterm=NONE
+    hi FoldColumn ctermbg=darkgray ctermfg=darkcyan cterm=NONE
+    hi Folded ctermbg=darkgray ctermfg=darkcyan cterm=NONE
     hi DiffAdd ctermbg=black ctermfg=darkgreen cterm=NONE
     hi DiffChange ctermbg=black ctermfg=darkyellow cterm=NONE
     hi DiffDelete ctermbg=black ctermfg=darkred cterm=NONE
