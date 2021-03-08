@@ -23,6 +23,15 @@ let s:airline_b_visual = [ '#101010', '#6d878d', 0, 6 ]
 let s:airline_c_visual = [ '#9b64fb', '#101010', 5, 0 ]
 let g:airline#themes#katana#palette.visual = airline#themes#generate_color_map(s:airline_a_visual, s:airline_b_visual, s:airline_c_visual)
 
+let s:airline_a_inactive = [ '#101010', '#404040', 0, 8 ]
+let s:airline_b_inactive = [ '#101010', '#6d878d', 0, 6 ]
+let s:airline_c_inactive = [ '#404040', '#101010', 8, 0 ]
+let g:airline#themes#katana#palette.inactive = airline#themes#generate_color_map(s:airline_a_inactive, s:airline_b_inactive, s:airline_c_inactive)
+
+let s:airline_a_commandline = [ '#101010', '#a0cf5d', 0, 10 ]
+let s:airline_b_commandline = [ '#101010', '#6d878d', 0, 6 ]
+let s:airline_c_commandline = [ '#a0cf5d', '#101010', 10, 0 ]
+let g:airline#themes#katana#palette.commandline = airline#themes#generate_color_map(s:airline_a_commandline, s:airline_b_commandline, s:airline_c_commandline)
 
 let g:airline#themes#katana#palette.normal_modified = {
 			\ 'airline_c': [ '#9b64fb', '#101010', 5, 0 ],
@@ -40,6 +49,9 @@ let g:airline#themes#katana#palette.visual_modified = {
 			\ 'airline_c': [ '#9b64fb', '#101010', 5, 0 ],
 			\ }
 
+let g:airline#themes#katana#palette.inactive_modified = {
+			\ 'airline_c': [ '#9b64fb', '#101010', 5, 0 ],
+			\ }
 
 let g:airline#themes#katana#palette.terminal = airline#themes#generate_color_map(s:airline_a_insert, s:airline_b_insert, s:airline_c_insert)
 
@@ -51,6 +63,9 @@ let g:airline#themes#katana#palette.replace.airline_warning = g:airline#themes#k
 let g:airline#themes#katana#palette.replace_modified.airline_warning = g:airline#themes#katana#palette.normal.airline_warning
 let g:airline#themes#katana#palette.visual.airline_warning = g:airline#themes#katana#palette.normal.airline_warning
 let g:airline#themes#katana#palette.visual_modified.airline_warning = g:airline#themes#katana#palette.normal.airline_warning
+let g:airline#themes#katana#palette.inactive.airline_warning = g:airline#themes#katana#palette.normal.airline_warning
+let g:airline#themes#katana#palette.inactive_modified.airline_warning = g:airline#themes#katana#palette.normal.airline_warning
+let g:airline#themes#katana#palette.commandline.airline_warning = g:airline#themes#katana#palette.normal.airline_warning
 
 let g:airline#themes#katana#palette.normal.airline_error = [ '#101010', '#e84f4f', 0, 1 ]
 let g:airline#themes#katana#palette.normal_modified.airline_error = g:airline#themes#katana#palette.normal.airline_error
@@ -60,3 +75,6 @@ let g:airline#themes#katana#palette.replace.airline_error = g:airline#themes#kat
 let g:airline#themes#katana#palette.replace_modified.airline_error = g:airline#themes#katana#palette.normal.airline_error
 let g:airline#themes#katana#palette.visual.airline_error = g:airline#themes#katana#palette.normal.airline_error
 let g:airline#themes#katana#palette.visual_modified.airline_error = g:airline#themes#katana#palette.normal.airline_error
+let g:airline#themes#katana#palette.inactive.airline_error = g:airline#themes#katana#palette.normal.airline_error
+let g:airline#themes#katana#palette.inactive_modified.airline_error = g:airline#themes#katana#palette.normal.airline_error
+let g:airline#themes#katana#palette.commandline.airline_error = g:airline#themes#katana#palette.normal.airline_error
